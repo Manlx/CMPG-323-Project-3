@@ -1,13 +1,13 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using _34551875Project3WebAppDesignPatterns.Models;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using Project3WebApp.Models;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Project3WebApp.Controllers
+namespace _34551875Project3WebAppDesignPatterns.Controllers
 {
     public class HomeController : Controller
     {
