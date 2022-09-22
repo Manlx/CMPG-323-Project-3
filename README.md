@@ -20,21 +20,39 @@
     <li>Development: This branch is there for feature development and testing</li>
 </ul>
 <h1>
+    Architectural pattern: MVC (Model View Controller)
+</h1>
+<h1>
     Tier System:
 </h1>
 <p>
     <h3>
-        Tier 1:
+        Tier 1: Beginner (Minimum Requirement)
     </h3>
-        
+    <p>
+        Repository Classes
+    </p>
+    <h3>
+        Tier 2: Advanced (Target Tier)
+    </h3>
+    <p>
+        Repository Classes
+        Repository Interfaces
+    </p>
+    <h3>
+        Tier 3: Expert (Dream Tier)
+    </h3>
+    <p>
+        Repository Classes
+        Repository Interfaces
+        Separate Projects
+    </p>
 </p>
 <h1>
     Progress:
 </h1>
 <p>
-
 </p>
 <h1>Reference List:</h1>
 <ul>
-        
 </ul>
