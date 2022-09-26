@@ -11,6 +11,7 @@ namespace DeviceManagement_WebApp.Repository
     public class GenericRepository<T> : IGenericRepository<T> where T : class
     {
         protected readonly ConnectedOfficeContext _context;
+
         public GenericRepository(ConnectedOfficeContext context)
         {
             _context = context;
@@ -55,9 +56,18 @@ namespace DeviceManagement_WebApp.Repository
         {
             this._context.SaveChangesAsync();
         }
-        public void Update(Category category)
+        public void Update(T Entity)
         {
-            this._context.Update(category);
+            this._context.Update(Entity);
+        }
+        public ConnectedOfficeContext GetContext()
+        {
+            return this._context;
+        }
+
+        public bool EntityExists(Guid id)
+        {
+            return this.GetById(id) != null;
         }
     }
 }

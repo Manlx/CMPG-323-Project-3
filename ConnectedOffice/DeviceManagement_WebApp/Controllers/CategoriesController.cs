@@ -22,9 +22,10 @@ namespace DeviceManagement_WebApp.Controllers
         }
 
         // GET: Categories
-        public async Task<IActionResult> Index()
+        public IActionResult Index()
         {
-            return View(GenericRepository.GetAll());
+            var Temp = GenericRepository.GetAll();
+            return View(Temp);
         }
 
         // GET: Categories/Details/5
@@ -139,7 +140,7 @@ namespace DeviceManagement_WebApp.Controllers
 
         private bool CategoryExists(Guid id)
         {
-            return GenericRepository.GetById(id) != null;
+            return GenericRepository.EntityExists(id);
         }
     }
 }
