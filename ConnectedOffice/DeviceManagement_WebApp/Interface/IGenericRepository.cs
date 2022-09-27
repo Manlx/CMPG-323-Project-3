@@ -4,6 +4,8 @@ using System;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using DeviceManagement_WebApp.Models;
 using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
+using DeviceManagement_WebApp.Data;
 
 namespace DeviceManagement_WebApp.Interface
 {
@@ -20,7 +22,7 @@ namespace DeviceManagement_WebApp.Interface
         public void Update(T Entit);
 
         public Task<T> FirstOrDefaultAsync(Expression<Func<T, bool>> expression);
-    
+        public ConnectedOfficeContext GetContext();
     }
 
 }

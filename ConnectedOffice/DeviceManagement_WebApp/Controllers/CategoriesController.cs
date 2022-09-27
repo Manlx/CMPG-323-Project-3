@@ -13,7 +13,7 @@ namespace DeviceManagement_WebApp.Controllers
 {
     public class CategoriesController : Controller
     {
-        private readonly ConnectedOfficeContext _context;
+        //private readonly ConnectedOfficeContext _context;
         private CategoryRepository CategoryRepository;
         public CategoriesController(ConnectedOfficeContext context)
         {

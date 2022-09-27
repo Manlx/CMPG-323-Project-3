@@ -61,6 +61,10 @@ namespace DeviceManagement_WebApp.Repository
         {
             return _context.Set<T>().FirstOrDefaultAsync(expression);
         }
+        public ConnectedOfficeContext GetContext()
+        {
+            return this._context;
+        }
 
     }
 }
