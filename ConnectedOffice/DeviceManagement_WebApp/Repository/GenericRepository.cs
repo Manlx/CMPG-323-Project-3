@@ -65,6 +65,5 @@ namespace DeviceManagement_WebApp.Repository
         {
             return this._context;
         }
-
     }
 }
