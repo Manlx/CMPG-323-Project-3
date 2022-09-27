@@ -5,6 +5,11 @@ using DeviceManagement_WebApp.Interface;
 using DeviceManagement_WebApp.Data;
 using System.Linq;
 using DeviceManagement_WebApp.Models;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Mvc;
+using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
+using Microsoft.EntityFrameworkCore.Query;
 
 namespace DeviceManagement_WebApp.Repository
 {
@@ -32,7 +37,7 @@ namespace DeviceManagement_WebApp.Repository
         {
             return _context.Set<T>().ToList();
         }
-        public T GetById(int id)
+        public T GetById(Guid id)
         {
             return _context.Set<T>().Find(id);
         }
@@ -44,30 +49,18 @@ namespace DeviceManagement_WebApp.Repository
         {
             _context.Set<T>().RemoveRange(entities);
         }
-
-        internal object GetById(Guid? id)
+        public void SaveAsync()
         {
-            if (id == null)
-                return null;
-            return _context.Set<T>().Find(id);
+            _context.SaveChangesAsync();
+        }
+        public void Update(T Entit)
+        {
+            _context.Update(Entit);
+        }
+        public Task<T> FirstOrDefaultAsync(Expression<Func<T, bool>> expression)
+        {
+            return _context.Set<T>().FirstOrDefaultAsync(expression);
         }
 
-        public void SaveChangesAsync()
-        {
-            this._context.SaveChangesAsync();
-        }
-        public void Update(T Entity)
-        {
-            this._context.Update(Entity);
-        }
-        public ConnectedOfficeContext GetContext()
-        {
-            return this._context;
-        }
-
-        public bool EntityExists(Guid id)
-        {
-            return this.GetById(id) != null;
-        }
     }
 }
