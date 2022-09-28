@@ -18,7 +18,7 @@ namespace DeviceManagement_WebApp.Interface
         void AddRange(IEnumerable<T> entities);
         void Remove(T entity);
         void RemoveRange(IEnumerable<T> entities);
-
+        public DbSet<X> GrabSet<X>() where X : class;
         Task<T> FindAsync(Guid id);
         Task<int> SaveAsync();
         public void Update(T Entit);

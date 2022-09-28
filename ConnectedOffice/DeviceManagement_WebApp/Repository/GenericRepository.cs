@@ -41,6 +41,10 @@ namespace DeviceManagement_WebApp.Repository
         {
             _context.Set<T>().Remove(entity);
         }
+        public DbSet<X> GrabSet<X>() where X : class
+        {
+            return _context.Set<X>();
+        }
         public void RemoveRange(IEnumerable<T> entities)
         {
             _context.Set<T>().RemoveRange(entities);
@@ -74,5 +78,6 @@ namespace DeviceManagement_WebApp.Repository
             var category =await _context.Set<T>().FindAsync(id);
             return category;
         }
+        
     }
 }
