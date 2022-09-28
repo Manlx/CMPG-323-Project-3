@@ -1,138 +1,138 @@
 <h1>CMPG-323-Project-3</h1>
 <p>
-    This repository will be used for project 3 known as the Web App Project with Testing Patterns.<br>
-    In the modern age having an application for your business is crucial. A web app is the best way<br>
-    of doing things as it allows for any device with a web browser to have the app accessible. In this <br>
-    Project we will be learn about the fundamentals of web apps.<br>
+This repository will be used for project 3 known as the Web App Project with Testing Patterns.<br>
+In the modern age having an application for your business is crucial. A web app is the best way<br>
+of doing things as it allows for any device with a web browser to have the app accessible. In this <br>
+Project we will be learn about the fundamentals of web apps.<br>
 </p>
 <h1>
-    Due Date
+Due Date
 </h1>
 <h4>
-    This project will end on 2022-09-29
+This project will end on 2022-09-29
 </h4>
 <h1>
-    There will be 3 Branches:
+There will be 3 Branches:
 </h1>
 <ul>
-    <li>Main: The active branch which holds the most stable version</li>
-    <li>Hotfix: This branch is there for small and quick bug patches</li>
-    <li>Controller Async: A branch where the Controllers have their methods reworked to work with Async</li>
-    <li>TierTwoAsync: A branch where a Tier Two Implementation of Async was Attempted (End of Life)</li>
-    <li>Main Development: Main branch to stage Merges (End of Life)</li>
-    <li>Tier Two Given: Base Implementation of a tier two Design with only the given code</li>
+<li>Main: The active branch which holds the most stable version</li>
+<li>Hotfix: This branch is there for small and quick bug patches</li>
+<li>Controller Async: A branch where the Controllers have their methods reworked to work with Async</li>
+<li>TierTwoAsync: A branch where a Tier Two Implementation of Async was Attempted (End of Life)</li>
+<li>Main Development: Main branch to stage Merges (End of Life)</li>
+<li>Tier Two Given: Base Implementation of a tier two Design with only the given code</li>
 </ul>
 <h1>
-    Architectural pattern: MVC (Model View Controller)
+Architectural pattern: MVC (Model View Controller)
 </h1>
 <h1>
-    Tier System:
+Tier System:
 </h1>
 <p>
-    <h3>
-        Tier 1: Beginner (Minimum Requirement)
-    </h3>
-    <p>
-        Repository Classes
-    </p>
-    <h3>
-        Tier 2: Advanced (Target Tier)
-    </h3>
-    <p>
-        Repository Classes
-        Repository Interfaces
-    </p>
-    <h3>
-        Tier 3: Expert (Dream Tier)
-    </h3>
-    <p>
-        Repository Classes
-        Repository Interfaces
-        Separate Projects
-    </p>
+<h3>
+Tier 1: Beginner (Minimum Requirement)
+</h3>
+<p>
+Repository Classes
+</p>
+<h3>
+Tier 2: Advanced (Target Tier)
+</h3>
+<p>
+Repository Classes
+Repository Interfaces
+</p>
+<h3>
+Tier 3: Expert (Dream Tier)
+</h3>
+<p>
+Repository Classes
+Repository Interfaces
+Separate Projects
+</p>
 </p>
 <h1>
-    Progress:
+Progress:
 </h1>
 <p>
-    <h3>2022-09-24:</h3>
-    ✅Inital Research <br>
-    ❎Implemented Tier 1 <br>
-    ❎Created Generic Interface <br>
-    ❎Created Specialized Interfaces <br>
-    ❎Created Generic Class (Generic Repository) <br>
-    ❎Created Specialized Classes (Zone ,Device ,Category Repository) <br>
-    ❎Implemented Tier 2 <br>
-    ❎Implemented Dependency injection <br>
-    ❎Implemented Repository Design Patter <br>
-    ❎Documented Code <br>
-    ❎Published Project <br>
+<h3>2022-09-24:</h3>
+✅Inital Research <br>
+❎Implemented Tier 1 <br>
+❎Created Generic Interface <br>
+❎Created Specialized Interfaces <br>
+❎Created Generic Class (Generic Repository) <br>
+❎Created Specialized Classes (Zone ,Device ,Category Repository) <br>
+❎Implemented Tier 2 <br>
+❎Implemented Dependency injection <br>
+❎Implemented Repository Design Patter <br>
+❎Documented Code <br>
+❎Published Project <br>
 
-    <h3>2022-09-26:</h3>
-    ✅Inital Research <br>
-    ✅Implemented Tier 1 <br>
-    ❎Created Generic Interface <br>
-    ❎Created Specialized Interfaces <br>
-    ❎Created Generic Class (Generic Repository) <br>
-    ❎Created Specialized Classes (Zone ,Device ,Category Repository) <br>
-    ❎Implemented Tier 2 <br>
-    ❎Implemented Dependency injection <br>
-    ❎Implemented Repository Design Patter <br>
-    ❎Documented Code <br>
-    ❎Published Project <br>
+<h3>2022-09-26:</h3>
+✅Inital Research <br>
+✅Implemented Tier 1 <br>
+❎Created Generic Interface <br>
+❎Created Specialized Interfaces <br>
+❎Created Generic Class (Generic Repository) <br>
+❎Created Specialized Classes (Zone ,Device ,Category Repository) <br>
+❎Implemented Tier 2 <br>
+❎Implemented Dependency injection <br>
+❎Implemented Repository Design Patter <br>
+❎Documented Code <br>
+❎Published Project <br>
 
-    <h3>2022-09-27:</h3>
-    ✅Inital Research <br>
-    ✅Implemented Tier 1 <br>
-    ✅Created Generic Interface <br>
-    ✅Created Specialized Interfaces <br>
-    ✅Created Generic Class (Generic Repository) <br>
-    ✅Created Specialized Classes (Zone ,Device ,Category Repository) <br>
-    ✅Implemented Tier 2 <br>
-    ❎Implemented Dependency injection <br>
-    ❎Implemented Repository Design Patter <br>
-    ❎Documented Code <br>
-    ❎Published Project <br>
+<h3>2022-09-27:</h3>
+✅Inital Research <br>
+✅Implemented Tier 1 <br>
+✅Created Generic Interface <br>
+✅Created Specialized Interfaces <br>
+✅Created Generic Class (Generic Repository) <br>
+✅Created Specialized Classes (Zone ,Device ,Category Repository) <br>
+✅Implemented Tier 2 <br>
+❎Implemented Dependency injection <br>
+❎Implemented Repository Design Patter <br>
+❎Documented Code <br>
+❎Published Project <br>
 
-    <h3>2022-09-28:</h3>
-    ✅Inital Research <br>
-    ✅Implemented Tier 1 <br>
-    ✅Created Generic Interface <br>
-    ✅Created Specialized Interfaces <br>
-    ✅Created Generic Class (Generic Repository) <br>
-    ✅Created Specialized Classes (Zone ,Device ,Category Repository) <br>
-    ✅Implemented Tier 2 <br>
-    ✅Implemented Dependency injection <br>
-    ✅Implemented Repository Design Patter <br>
-    ✅Documented Code <br>
-    ✅Published Project <br>
+<h3>2022-09-28:</h3>
+✅Inital Research <br>
+✅Implemented Tier 1 <br>
+✅Created Generic Interface <br>
+✅Created Specialized Interfaces <br>
+✅Created Generic Class (Generic Repository) <br>
+✅Created Specialized Classes (Zone ,Device ,Category Repository) <br>
+✅Implemented Tier 2 <br>
+✅Implemented Dependency injection <br>
+✅Implemented Repository Design Patter <br>
+✅Documented Code <br>
+✅Published Project <br>
 </p>
 <h1>Reference List:</h1>
 <ol>
-    <li><a href="https://learn.microsoft.com/en-us/aspnet/core/fundamentals/dependency-injection?view=aspnetcore-6.0#service-lifetimes-and-registration-options">Dependency injection in ASP.NET Core</a></li>
-    <li><a href="https://stackoverflow.com/questions/38138100/addtransient-addscoped-and-addsingleton-services-differences">AddTransient, AddScoped and AddSingleton Services Differences</a></li>
-    <li><a href="https://www.dropbox.com/sh/p8fiokfpiqv4gud/AAC5X8SdanTnduTWYzVq4kQ7a?dl=0&preview=08+CMPG+323+-+Design+patternc+class+15+Sept.m4v">Class where Design Pattern was explained</a></li>
-    <li><a href="https://www.youtube.com/watch?v=il9gl8MH17s&t=710s&ab_channel=RawCoding">Video explaining how Async Await and Tasks work</a></li>
-    <li><a href="https://www.dropbox.com/sh/p8fiokfpiqv4gud/AAC5X8SdanTnduTWYzVq4kQ7a?dl=0&preview=07+Cmpg+323+-+Patterns+Intro+Project+2+submission+8+Sept.m4v">Video with initial Design Pattern Explanation</a></li>
-    <li><a href="https://www.dropbox.com/sh/p8fiokfpiqv4gud/AAC5X8SdanTnduTWYzVq4kQ7a?dl=0&preview=09+CMPG323+-+Project+3+repository+pattern+concepts+20+Sept+recording.mp4">Slower Explination</a></li>
-    <li><a href="https://www.c-sharpcorner.com/UploadFile/85ed7a/dependency-injection-in-C-Sharp/">A not so great example of DI</a></li>
-    <li><a href="https://learn.microsoft.com/en-us/dotnet/standard/parallel-programming/how-to-return-a-value-from-a-task">What is a Task in C#</a></li>
-    <li><a href="https://efundi.nwu.ac.za/access/content/group/b4bd0272-e3c3-4151-b9ce-3888cdadc374/Training/Implementing%20Repository%20Pattern%20Guidance%20Document.docx">Documented Example of how to do Repository Design Pattern</a></li>
-    <li><a href="https://efundi.nwu.ac.za/access/content/group/b4bd0272-e3c3-4151-b9ce-3888cdadc374/Slides/06%20Patterns%20_%20Principles/07%20Application%20of%20Design%20Patterns.pptx">Do Base Connection to DB</a></li>
-    <li><a href="https://efundi.nwu.ac.za/access/content/group/b4bd0272-e3c3-4151-b9ce-3888cdadc374/Slides/06%20Patterns%20_%20Principles/09%20CMPG323%20-%2020%20Sept%20Best%20practise%20assignment%20concepts.pptx">Conceptual explaination of how RDP works</a></li>
-    <li><a href="https://www.dropbox.com/sh/p8fiokfpiqv4gud/AAC5X8SdanTnduTWYzVq4kQ7a?dl=0&preview=08+CMPG323+-+Project+3+-+Best+practise+and+standards+13+Sept.m4v">Extra explination of RDP</a></li>
-    <li><a href="https://www.dropbox.com/sh/p8fiokfpiqv4gud/AAC5X8SdanTnduTWYzVq4kQ7a?dl=0&preview=08+CMPG323+-+Project+3+-+WebApp+demo+13+Sept.m4v">What to work towards for this project</a></li>
-    <li><a href="https://learn.microsoft.com/en-us/aspnet/core/data/ef-mvc/intro?view=aspnetcore-3.1">Basic Tier 1 Explination</a></li>
-    <li><a href="https://codewithmukesh.com/blog/repository-pattern-in-aspnet-core/">A bit more depth look at Why you want to use Design Patterns</a></li>
-    <li><a href="https://medium.com/oppr/net-core-using-entity-framework-core-in-a-separate-project-e8636f9dc9e5">How to split up your project of a better project strucuter</a></li>
-    <li><a href="https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/async/">Explination of Async</a></li>
-    <li><a href="https://stackoverflow.com/questions/10955579/passing-just-a-type-as-a-parameter-in-c-sharp">Passing Type as a Parameter</a></li>
-    <li><a href="https://stackoverflow.com/questions/38483045/what-does-the-type-t-must-be-a-reference-type-in-order-to-use-it-as-parameter">Grabbing Data without GetContext()</a></li>
-    <li><a href="https://www.theserverside.com/tutorial/How-to-git-revert-a-commit-A-simple-undo-changes-example">Rolling back Bad Commits</a></li>
-    <li><a href="https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/override">Overriding in C#</a></li>
-    <li><a href="https://dotnettutorials.net/lesson/return-a-value-from-a-task-in-csharp/">Using Tasks</a></li>
-    <li><a href="https://www.w3schools.com/css/">Learn to Style the views</a></li>
-    <li><a href="https://dotnettutorials.net/lesson/repository-design-pattern-csharp/#:~:text=The%20Repository%20Design%20Pattern%20in%20C%23%20Mediates%20between%20the%20domain,and%20the%20data%20access%20logic.">An indepth look at RDP</a></li>
-    <li><a href="https://learn.microsoft.com/en-us/visualstudio/get-started/csharp/tutorial-aspnet-core?view=vs-2022">The basics of C# Webapps</a></li>
+<li><a href="https://learn.microsoft.com/en-us/aspnet/core/fundamentals/dependency-injection?view=aspnetcore-6.0#service-lifetimes-and-registration-options">Dependency injection in ASP.NET Core</a></li>
+<li><a href="https://stackoverflow.com/questions/38138100/addtransient-addscoped-and-addsingleton-services-differences">AddTransient, AddScoped and AddSingleton Services Differences</a></li>
+<li><a href="https://www.dropbox.com/sh/p8fiokfpiqv4gud/AAC5X8SdanTnduTWYzVq4kQ7a?dl=0&preview=08+CMPG+323+-+Design+patternc+class+15+Sept.m4v">Class where Design Pattern was explained</a></li>
+<li><a href="https://www.youtube.com/watch?v=il9gl8MH17s&t=710s&ab_channel=RawCoding">Video explaining how Async Await and Tasks work</a></li>
+<li><a href="https://www.dropbox.com/sh/p8fiokfpiqv4gud/AAC5X8SdanTnduTWYzVq4kQ7a?dl=0&preview=07+Cmpg+323+-+Patterns+Intro+Project+2+submission+8+Sept.m4v">Video with initial Design Pattern Explanation</a></li>
+<li><a href="https://www.dropbox.com/sh/p8fiokfpiqv4gud/AAC5X8SdanTnduTWYzVq4kQ7a?dl=0&preview=09+CMPG323+-+Project+3+repository+pattern+concepts+20+Sept+recording.mp4">Slower Explination</a></li>
+<li><a href="https://www.c-sharpcorner.com/UploadFile/85ed7a/dependency-injection-in-C-Sharp/">A not so great example of DI</a></li>
+<li><a href="https://learn.microsoft.com/en-us/dotnet/standard/parallel-programming/how-to-return-a-value-from-a-task">What is a Task in C#</a></li>
+<li><a href="https://efundi.nwu.ac.za/access/content/group/b4bd0272-e3c3-4151-b9ce-3888cdadc374/Training/Implementing%20Repository%20Pattern%20Guidance%20Document.docx">Documented Example of how to do Repository Design Pattern</a></li>
+<li><a href="https://efundi.nwu.ac.za/access/content/group/b4bd0272-e3c3-4151-b9ce-3888cdadc374/Slides/06%20Patterns%20_%20Principles/07%20Application%20of%20Design%20Patterns.pptx">Do Base Connection to DB</a></li>
+<li><a href="https://efundi.nwu.ac.za/access/content/group/b4bd0272-e3c3-4151-b9ce-3888cdadc374/Slides/06%20Patterns%20_%20Principles/09%20CMPG323%20-%2020%20Sept%20Best%20practise%20assignment%20concepts.pptx">Conceptual explaination of how RDP works</a></li>
+<li><a href="https://www.dropbox.com/sh/p8fiokfpiqv4gud/AAC5X8SdanTnduTWYzVq4kQ7a?dl=0&preview=08+CMPG323+-+Project+3+-+Best+practise+and+standards+13+Sept.m4v">Extra explination of RDP</a></li>
+<li><a href="https://www.dropbox.com/sh/p8fiokfpiqv4gud/AAC5X8SdanTnduTWYzVq4kQ7a?dl=0&preview=08+CMPG323+-+Project+3+-+WebApp+demo+13+Sept.m4v">What to work towards for this project</a></li>
+<li><a href="https://learn.microsoft.com/en-us/aspnet/core/data/ef-mvc/intro?view=aspnetcore-3.1">Basic Tier 1 Explination</a></li>
+<li><a href="https://codewithmukesh.com/blog/repository-pattern-in-aspnet-core/">A bit more depth look at Why you want to use Design Patterns</a></li>
+<li><a href="https://medium.com/oppr/net-core-using-entity-framework-core-in-a-separate-project-e8636f9dc9e5">How to split up your project of a better project strucuter</a></li>
+<li><a href="https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/async/">Explination of Async</a></li>
+<li><a href="https://stackoverflow.com/questions/10955579/passing-just-a-type-as-a-parameter-in-c-sharp">Passing Type as a Parameter</a></li>
+<li><a href="https://stackoverflow.com/questions/38483045/what-does-the-type-t-must-be-a-reference-type-in-order-to-use-it-as-parameter">Grabbing Data without GetContext()</a></li>
+<li><a href="https://www.theserverside.com/tutorial/How-to-git-revert-a-commit-A-simple-undo-changes-example">Rolling back Bad Commits</a></li>
+<li><a href="https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/override">Overriding in C#</a></li>
+<li><a href="https://dotnettutorials.net/lesson/return-a-value-from-a-task-in-csharp/">Using Tasks</a></li>
+<li><a href="https://www.w3schools.com/css/">Learn to Style the views</a></li>
+<li><a href="https://dotnettutorials.net/lesson/repository-design-pattern-csharp/#:~:text=The%20Repository%20Design%20Pattern%20in%20C%23%20Mediates%20between%20the%20domain,and%20the%20data%20access%20logic.">An indepth look at RDP</a></li>
+<li><a href="https://learn.microsoft.com/en-us/visualstudio/get-started/csharp/tutorial-aspnet-core?view=vs-2022">The basics of C# Webapps</a></li>
 </ol>
 <img src="https://mfdot.com/UML.drawio.svg"/>
