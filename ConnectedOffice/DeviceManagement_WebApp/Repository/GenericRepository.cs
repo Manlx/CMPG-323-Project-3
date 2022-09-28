@@ -49,9 +49,9 @@ namespace DeviceManagement_WebApp.Repository
         {
             _context.Set<T>().RemoveRange(entities);
         }
-        public void SaveAsync()
+        public async Task<int> SaveAsync()
         {
-            _context.SaveChangesAsync();
+            return await _context.SaveChangesAsync();
         }
         public void Update(T Entit)
         {
@@ -64,6 +64,17 @@ namespace DeviceManagement_WebApp.Repository
         public ConnectedOfficeContext GetContext()
         {
             return this._context;
+        }
+
+        public Task<List<T>> ToListAsync()
+        {
+            var Outs = _context.Set<T>().ToListAsync();
+            return Outs;
+        }
+        public async Task<T> FindAsync(Guid id)
+        {
+            var category =await _context.Set<T>().FindAsync(id);
+            return category;
         }
     }
 }
