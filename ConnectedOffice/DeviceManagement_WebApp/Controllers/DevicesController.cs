@@ -43,8 +43,8 @@ namespace DeviceManagement_WebApp.Controllers
         // GET: Devices/Create
         public IActionResult Create()
         {
-            ViewData["CategoryId"] = new SelectList(DeviceRepository.GetContext().Category, "CategoryId", "CategoryName");
-            ViewData["ZoneId"] = new SelectList(DeviceRepository.GetContext().Zone, "ZoneId", "ZoneName");
+            ViewData["CategoryId"] = new SelectList(DeviceRepository.GrabSet<Category>(), "CategoryId", "CategoryName");
+            ViewData["ZoneId"] = new SelectList(DeviceRepository.GrabSet<Zone>(), "ZoneId", "ZoneName");
             return View();
         }
 
@@ -76,8 +76,8 @@ namespace DeviceManagement_WebApp.Controllers
             {
                 return NotFound();
             }
-            ViewData["CategoryId"] = new SelectList(DeviceRepository.GetContext().Category, "CategoryId", "CategoryName", device.CategoryId);
-            ViewData["ZoneId"] = new SelectList(DeviceRepository.GetContext().Zone, "ZoneId", "ZoneName", device.ZoneId);
+            ViewData["CategoryId"] = new SelectList(DeviceRepository.GrabSet<Category>(), "CategoryId", "CategoryName", device.CategoryId);
+            ViewData["ZoneId"] = new SelectList(DeviceRepository.GrabSet<Zone>(), "ZoneId", "ZoneName", device.ZoneId);
             return View(device);
         }
 
