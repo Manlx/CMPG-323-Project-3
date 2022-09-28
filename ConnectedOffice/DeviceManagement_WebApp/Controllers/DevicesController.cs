@@ -20,7 +20,7 @@ namespace DeviceManagement_WebApp.Controllers
         // GET: Devices
         public async Task<IActionResult> Index()
         { 
-            return View(await DeviceRepository.ToListAsync());
+            return View(await DeviceRepository.GetAllAll());
         }
 
         // GET: Devices/Details/5
