@@ -50,11 +50,19 @@
 </p>
 <h1>
     Progress:
+    Implement Tier 1
 </h1>
 <p>
 </p>
 <h1>Reference List:</h1>
 <ul>
-
-<img src="https://mfdot.com/UML.drawio.svg"/>
+    <li><a href="https://learn.microsoft.com/en-us/aspnet/core/fundamentals/dependency-injection?view=aspnetcore-6.0#service-lifetimes-and-registration-options">Dependency injection in ASP.NET Core</a></li>
+    <li><a href="https://stackoverflow.com/questions/38138100/addtransient-addscoped-and-addsingleton-services-differences">AddTransient, AddScoped and AddSingleton Services Differences</a></li>
+    <li><a href="https://www.dropbox.com/sh/p8fiokfpiqv4gud/AAC5X8SdanTnduTWYzVq4kQ7a?dl=0&preview=08+CMPG+323+-+Design+patternc+class+15+Sept.m4v">Class where Design Pattern was explained</a></li>
+    <li><a href="https://www.youtube.com/watch?v=il9gl8MH17s&t=710s&ab_channel=RawCoding">Video explaining how Async Await and Tasks work</a></li>
+    <li><a href="https://www.dropbox.com/sh/p8fiokfpiqv4gud/AAC5X8SdanTnduTWYzVq4kQ7a?dl=0&preview=07+Cmpg+323+-+Patterns+Intro+Project+2+submission+8+Sept.m4v">Video with initial Design Pattern Explanation</a></li>
+    <li><a href="https://www.dropbox.com/sh/p8fiokfpiqv4gud/AAC5X8SdanTnduTWYzVq4kQ7a?dl=0&preview=09+CMPG323+-+Project+3+repository+pattern+concepts+20+Sept+recording.mp4">Slower Explination</a></li>
+    <li><a href="https://www.c-sharpcorner.com/UploadFile/85ed7a/dependency-injection-in-C-Sharp/">A not so great example of DI</a></li>
+    <li><a href="https://learn.microsoft.com/en-us/dotnet/standard/parallel-programming/how-to-return-a-value-from-a-task">What is a Task in C#</a></li>
 </ul>
+<img src="https://mfdot.com/UML.drawio.svg"/>
