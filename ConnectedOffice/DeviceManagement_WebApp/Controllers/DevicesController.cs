@@ -15,7 +15,6 @@ namespace DeviceManagement_WebApp.Controllers
     {
         //private readonly ConnectedOfficeContext _context;
         private DeviceRepository DeviceRepository;
-
         public DevicesController(ConnectedOfficeContext context)
         {
             //_context = context;
@@ -24,9 +23,8 @@ namespace DeviceManagement_WebApp.Controllers
 
         // GET: Devices
         public async Task<IActionResult> Index()
-        {
-            var connectedOfficeContext = DeviceRepository.GetAll();
-            return View(connectedOfficeContext);
+        { 
+            return View(await DeviceRepository.ToListAsync());
         }
 
         // GET: Devices/Details/5
@@ -37,7 +35,7 @@ namespace DeviceManagement_WebApp.Controllers
                 return NotFound();
             }
 
-            var device = DeviceRepository.GetById((Guid)id);
+            var device = await DeviceRepository.FirstOrDefaultAsync(m => m.DeviceId == id);
             if (device == null)
             {
                 return NotFound();
@@ -63,7 +61,7 @@ namespace DeviceManagement_WebApp.Controllers
         {
             device.DeviceId = Guid.NewGuid();
             DeviceRepository.Add(device);
-            DeviceRepository.SaveAsync();
+            await DeviceRepository.SaveAsync();
             return RedirectToAction(nameof(Index));
 
 
@@ -77,7 +75,7 @@ namespace DeviceManagement_WebApp.Controllers
                 return NotFound();
             }
 
-            var device = DeviceRepository.GetById((Guid)id);
+            var device = await DeviceRepository.FindAsync((Guid)id);
             if (device == null)
             {
                 return NotFound();
@@ -101,7 +99,7 @@ namespace DeviceManagement_WebApp.Controllers
             try
             {
                 DeviceRepository.Update(device);
-                DeviceRepository.SaveAsync();
+                await DeviceRepository.SaveAsync();
             }
             catch (DbUpdateConcurrencyException)
             {
@@ -126,7 +124,7 @@ namespace DeviceManagement_WebApp.Controllers
                 return NotFound();
             }
 
-            var device = DeviceRepository.GetById((Guid)id);
+            var device = await DeviceRepository.FirstOrDefaultAsync(m => m.DeviceId == id);
             if (device == null)
             {
                 return NotFound();
@@ -140,13 +138,13 @@ namespace DeviceManagement_WebApp.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(Guid id)
         {
-            var device = DeviceRepository.GetById((Guid)id);
+            var device = await DeviceRepository.FindAsync(id);
             DeviceRepository.Remove(device);
-            DeviceRepository.SaveAsync();
+            await DeviceRepository.SaveAsync();
             return RedirectToAction(nameof(Index));
         }
 
-        public bool DeviceExists(Guid id)
+        private bool DeviceExists(Guid id)
         {
             return DeviceRepository.DeviceExists(id);
         }

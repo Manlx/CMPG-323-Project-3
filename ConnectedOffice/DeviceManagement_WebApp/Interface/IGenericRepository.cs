@@ -18,11 +18,14 @@ namespace DeviceManagement_WebApp.Interface
         void AddRange(IEnumerable<T> entities);
         void Remove(T entity);
         void RemoveRange(IEnumerable<T> entities);
-        void SaveAsync();
+
+        Task<T> FindAsync(Guid id);
+        Task<int> SaveAsync();
         public void Update(T Entit);
 
         public Task<T> FirstOrDefaultAsync(Expression<Func<T, bool>> expression);
         public ConnectedOfficeContext GetContext();
-    }
 
+        public Task<List<T>> ToListAsync();
+    }
 }

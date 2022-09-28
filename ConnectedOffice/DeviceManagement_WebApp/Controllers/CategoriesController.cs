@@ -14,17 +14,19 @@ namespace DeviceManagement_WebApp.Controllers
     public class CategoriesController : Controller
     {
         //private readonly ConnectedOfficeContext _context;
+
         private CategoryRepository CategoryRepository;
         public CategoriesController(ConnectedOfficeContext context)
         {
-            //_context = context;
             CategoryRepository = new CategoryRepository(context);
+            //_context = context;
         }
 
         // GET: Categories
         public async Task<IActionResult> Index()
         {
-            return View(CategoryRepository.GetAll());
+
+            return View(await CategoryRepository.ToListAsync());
         }
 
         // GET: Categories/Details/5
@@ -35,7 +37,7 @@ namespace DeviceManagement_WebApp.Controllers
                 return NotFound();
             }
 
-            var category = CategoryRepository.GetById((Guid)id);
+            var category = await CategoryRepository.FirstOrDefaultAsync(m => m.CategoryId == id);
             if (category == null)
             {
                 return NotFound();
@@ -59,7 +61,7 @@ namespace DeviceManagement_WebApp.Controllers
         {
             category.CategoryId = Guid.NewGuid();
             CategoryRepository.Add(category);
-            CategoryRepository.SaveAsync();
+            await CategoryRepository.SaveAsync();
             return RedirectToAction(nameof(Index));
         }
 
@@ -71,12 +73,13 @@ namespace DeviceManagement_WebApp.Controllers
                 return NotFound();
             }
 
-            var category = CategoryRepository.GetById((Guid)id);
-            if (category == null)
+            var categoryTask = CategoryRepository.GetById((Guid)id);
+           
+            if (categoryTask == null)
             {
                 return NotFound();
             }
-            return View(category);
+            return View(categoryTask);
         }
 
         // POST: Categories/Edit/5
@@ -93,7 +96,7 @@ namespace DeviceManagement_WebApp.Controllers
             try
             {
                 CategoryRepository.Update(category);
-                CategoryRepository.SaveAsync();
+                await CategoryRepository.SaveAsync();
             }
             catch (DbUpdateConcurrencyException)
             {
@@ -131,9 +134,9 @@ namespace DeviceManagement_WebApp.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(Guid id)
         {
-            var category = CategoryRepository.GetById((Guid)id);
+            var category = await CategoryRepository.FindAsync(id);
             CategoryRepository.Remove(category);
-            CategoryRepository.SaveAsync();
+            await CategoryRepository.SaveAsync();
             return RedirectToAction(nameof(Index));
         }
 
