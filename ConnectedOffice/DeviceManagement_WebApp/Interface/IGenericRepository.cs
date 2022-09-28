@@ -28,5 +28,4 @@ namespace DeviceManagement_WebApp.Interface
 
         public Task<List<T>> ToListAsync();
     }
-
 }
