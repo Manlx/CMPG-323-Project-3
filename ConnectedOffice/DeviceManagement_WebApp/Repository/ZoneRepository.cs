@@ -8,9 +8,9 @@ namespace DeviceManagement_WebApp.Repository
 {
     public class ZoneRepository : GenericRepository<Zone>, IZoneRepository
     {
-        public ZoneRepository(ConnectedOfficeContext context) : base(context)
-        {
-        }
+        //Default Constructor leave empty
+        public ZoneRepository(ConnectedOfficeContext context) : base(context){}
+        //Looks if Entity of Type Zone Exists with Guid of 
         public bool ZoneExists(Guid id)
         {
             return _context.Zone.Any(e => e.ZoneId == id);

@@ -1,24 +1,20 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
-using DeviceManagement_WebApp.Data;
 using DeviceManagement_WebApp.Models;
-using DeviceManagement_WebApp.Repository;
+using DeviceManagement_WebApp.Interface;
 
 namespace DeviceManagement_WebApp.Controllers
 {
     public class DevicesController : Controller
     {
-        //private readonly ConnectedOfficeContext _context;
-        private DeviceRepository DeviceRepository;
-        public DevicesController(ConnectedOfficeContext context)
+        private IDeviceRepository DeviceRepository;
+        //Constructor with Injection.
+        public DevicesController(IDeviceRepository IDeviceRepository)
         {
-            //_context = context;
-            DeviceRepository = new DeviceRepository(context);
+            DeviceRepository = IDeviceRepository;
         }
 
         // GET: Devices

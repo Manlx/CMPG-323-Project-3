@@ -5,7 +5,7 @@ namespace DeviceManagement_WebApp.Interface
 {
     public interface IDeviceRepository : IGenericRepository<Device>
     {
-        //Add specialized Zone Methods
+        //Looks if Entity of Type Device Exists with Guid of 
         bool DeviceExists(Guid id);
     }
 }

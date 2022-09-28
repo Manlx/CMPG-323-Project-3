@@ -9,7 +9,7 @@ namespace DeviceManagement_WebApp.Interface
 {
     public interface ICategoryRepository: IGenericRepository<Category>
     {
-        //Add specialized Zone Methods
+        //Looks if Entity of Type Category Exists with Guid of 
         public bool CategoryExists(Guid id);
 
     }

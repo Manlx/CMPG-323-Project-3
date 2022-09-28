@@ -1,24 +1,20 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
-using DeviceManagement_WebApp.Data;
 using DeviceManagement_WebApp.Models;
-using DeviceManagement_WebApp.Repository;
+using DeviceManagement_WebApp.Interface;
 
 namespace DeviceManagement_WebApp.Controllers
 {
     public class ZonesController : Controller
     {
-        //private readonly ConnectedOfficeContext _context;
-        ZoneRepository ZoneRepository;
-        public ZonesController(ConnectedOfficeContext context)
+        
+        private IZoneRepository ZoneRepository;
+        //Constructor with Injection.
+        public ZonesController(IZoneRepository IZoneRepository)
         {
-//            _context = context;
-            ZoneRepository = new ZoneRepository(context);
+            ZoneRepository = IZoneRepository;
         }
 
         // GET: Zones
@@ -139,7 +135,6 @@ namespace DeviceManagement_WebApp.Controllers
             await ZoneRepository.SaveAsync();
             return RedirectToAction(nameof(Index));
         }
-
         private bool ZoneExists(Guid id)
         {
             return ZoneRepository.ZoneExists(id);

@@ -12,10 +12,9 @@ namespace DeviceManagement_WebApp.Repository
 {
     public class CategoryRepository: GenericRepository<Category>, ICategoryRepository
     {
-        public CategoryRepository(ConnectedOfficeContext context) : base(context)
-        {
-        }
-
+        //Default Constructor leave empty
+        public CategoryRepository(ConnectedOfficeContext context) : base(context){}
+        //Looks if Entity of Type Zone Exists with Guid of 
         public bool CategoryExists(Guid id)
         {
             return _context.Category.Any(e => e.CategoryId == id);

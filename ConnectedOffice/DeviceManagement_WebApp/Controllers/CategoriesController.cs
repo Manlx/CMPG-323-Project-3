@@ -1,34 +1,28 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using DeviceManagement_WebApp.Data;
 using DeviceManagement_WebApp.Models;
 using DeviceManagement_WebApp.Repository;
+using DeviceManagement_WebApp.Interface;
 
 namespace DeviceManagement_WebApp.Controllers
 {
     public class CategoriesController : Controller
     {
-        //private readonly ConnectedOfficeContext _context;
-
-        private CategoryRepository CategoryRepository;
-        public CategoriesController(ConnectedOfficeContext context)
+        private ICategoryRepository CategoryRepository;
+        
+        //Constructor with Injection.
+        public CategoriesController(ICategoryRepository categoryRepository)
         {
-            CategoryRepository = new CategoryRepository(context);
-            //_context = context;
+            CategoryRepository = categoryRepository;
         }
-
         // GET: Categories
         public async Task<IActionResult> Index()
         {
-
             return View(await CategoryRepository.ToListAsync());
         }
-
         // GET: Categories/Details/5
         public async Task<IActionResult> Details(Guid? id)
         {
@@ -53,8 +47,6 @@ namespace DeviceManagement_WebApp.Controllers
         }
 
         // POST: Categories/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to, for 
-        // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("CategoryId,CategoryName,CategoryDescription,DateCreated")] Category category)

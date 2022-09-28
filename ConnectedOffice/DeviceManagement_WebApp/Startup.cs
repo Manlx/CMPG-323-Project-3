@@ -41,7 +41,7 @@ namespace DeviceManagement_WebApp
             services.AddControllersWithViews();
             services.AddRazorPages();
 
-            //Added Injections
+            //Added Injections for Repositories and interfaces
             services.AddTransient(typeof(IGenericRepository<>), typeof(GenericRepository<>));
             services.AddTransient<IZoneRepository, ZoneRepository>();
             services.AddTransient<ICategoryRepository, CategoryRepository>();

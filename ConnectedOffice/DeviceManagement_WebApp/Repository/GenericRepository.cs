@@ -4,12 +4,8 @@ using System;
 using DeviceManagement_WebApp.Interface;
 using DeviceManagement_WebApp.Data;
 using System.Linq;
-using DeviceManagement_WebApp.Models;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.AspNetCore.Mvc;
 using System.Threading.Tasks;
-using Microsoft.EntityFrameworkCore.Metadata.Internal;
-using Microsoft.EntityFrameworkCore.Query;
 
 namespace DeviceManagement_WebApp.Repository
 {
@@ -65,12 +61,14 @@ namespace DeviceManagement_WebApp.Repository
         {
             return this._context;
         }
-
+        //Return a Task with a list of Type 
         public Task<List<T>> ToListAsync()
         {
             var Outs = _context.Set<T>().ToListAsync();
             return Outs;
         }
+
+        //Find an entity of type T asynchronously
         public async Task<T> FindAsync(Guid id)
         {
             var category =await _context.Set<T>().FindAsync(id);
